@@ -39,7 +39,7 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="hero-copy">
           <p className="eyebrow">A new sewing & craft shop · Coming soon</p>
-          <h1>Good fabric.<br />Thoughtful makes.</h1>
+          <h1>Quality fabric.<br />Crafted with care.</h1>
           <p className="hero-intro">
             Loon & Pine is a small, independently owned shop for carefully
             selected quilting cotton, useful precuts, and handmade quilted
