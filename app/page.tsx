@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const collections = [
   {
     number: "01",
@@ -24,7 +26,13 @@ export default function Home() {
     <main>
       <header className="site-header">
         <a className="wordmark" href="#top" aria-label="Loon and Pine home">
-          <img src="/loon-and-pine-logo.png" alt="Loon & Pine" />
+          <Image
+            src="/loon-and-pine-logo.png"
+            alt="Loon & Pine"
+            width={150}
+            height={70}
+            priority
+          />
         </a>
         <nav aria-label="Main navigation">
           <a href="#collection">Collection</a>
@@ -52,7 +60,13 @@ export default function Home() {
         </div>
         <div className="hero-mark" aria-hidden="true">
           <div className="hero-logo-wrap">
-            <img src="/loon-and-pine-logo-cream.png" alt="" />
+            <Image
+              src="/loon-and-pine-logo-cream.png"
+              alt=""
+              width={390}
+              height={260}
+              priority
+            />
           </div>
           <p>Fabric · Notions · Handmade</p>
         </div>
@@ -100,9 +114,11 @@ export default function Home() {
             <i></i><i></i><i></i><i></i>
           </div>
           <figure className="maker-photo">
-            <img
+            <Image
               src="/isabelle-maker-square.jpg"
               alt="Isabelle, the founder and maker behind Loon & Pine"
+              width={260}
+              height={260}
             />
             <figcaption>Isabelle · Founder & maker</figcaption>
           </figure>
@@ -150,7 +166,7 @@ export default function Home() {
       </section>
 
       <footer>
-        <img src="/loon-and-pine-logo.png" alt="Loon & Pine" />
+        <Image src="/loon-and-pine-logo.png" alt="Loon & Pine" width={140} height={90} />
         <p>Fabric, notions & handmade goods</p>
         <p>© 2026 Loon & Pine · A Nelson Labs LLC company</p>
       </footer>
